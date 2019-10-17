@@ -15,15 +15,15 @@ public class Chicken : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.E))
         {
-            m_animator.SetTrigger("吃飯觸發器");
+            m_animator.SetTrigger("Eat");
         }
         if (Input.GetKey(KeyCode.R))
         {
-            m_animator.SetBool("跑步開關",true);
+            m_animator.SetBool("Run",true);
         }
         if (Input.GetKeyUp(KeyCode.R))
         {
-            m_animator.SetBool("跑步開關", false);
+            m_animator.SetBool("Run", false);
         }
     }
 }
